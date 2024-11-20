@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      6H
+    </title>
+  </head>
+
+  <body>
+    <script>
+      let number=Math.random();
+      const guess='heads'
+      let result='';
+      if(number<0.5){
+        result='heads';
+        
+      }
+      else{
+        result='tails';
+      }
+     const message=(result===guess)?'You win!':'You lose!';
+     console.log(message);
+    </script>
+
+  </body>
+</html>
