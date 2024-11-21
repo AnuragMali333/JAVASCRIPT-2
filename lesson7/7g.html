@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    7G
+  </title>
+</head>
+
+<body>
+  <script>
+    function convertLength(length, from, to) {
+
+      if (from === 'miles' && to === 'km') {
+        let km = length * 1.6;
+        console.log(km + ' km');
+      }
+
+      else if (from === 'km' && to === 'miles') {
+        let miles = length * 1 / 1.6;
+        console.log(miles + ' miles');
+      }
+
+      else if (from===to) {
+        console.log(length +' '+to);
+      }
+
+    }
+    convertLength(50, 'miles', 'km');
+    convertLength(32, 'km', 'miles');
+    convertLength(50, 'km', 'km')
+    convertLength(50,'miles','miles')
+  </script>
+</body>
+
+</html>
