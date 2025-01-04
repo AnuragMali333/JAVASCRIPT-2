@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    6J
+  </title>
+</head>
+
+<body>
+
+  <button
+  onclick="
+  playGame('heads');
+  "
+  >
+    heads
+  </button>
+
+  <button
+  onclick="
+  playGame('tails');
+  "
+  >
+    tails
+  </button>
+
+
+  <script>
+
+    function playGame(guess){
+      let number=Math.random();
+      const result=(number>0.5)?'heads':'tails';
+      const message=(guess===result)?'You win':'You lose';
+      console.log(message);
+    }
+  </script>
+
+</body>
+
+</html>
