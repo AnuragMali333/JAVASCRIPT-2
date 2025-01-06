@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+
+  <body>
+    <button onclick="displayChoice(this);" class="js-button">
+      heads
+    </button>
+
+    <button onclick="displayChoice(this)" class="js-button">
+      tails
+    </button>
+    <p class="js-result"></p>
+
+    <script>
+      function displayChoice(button){
+      let choice=button.innerText;
+        document.querySelector('.js-result').innerText=`You chose ${choice}`;
+      }
+    </script>
+  </body>
+</html>

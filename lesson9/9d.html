@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    9D
+  </title>
+</head>
+
+<body>
+  <input class="js-input-box" type="text">
+
+  <button class="js-submit-button" onclick="displayName()">
+    Submit
+  </button>
+
+  <p class="js-result"></p>
+
+  <script>
+    function displayName() {
+      const inputElement = document.querySelector('.js-input-box');
+      const name = (inputElement.value);
+      document.querySelector('.js-result').innerText = `Your name is ${name}`;
+    }
+
+  </script>
+</body>
+
+</html>

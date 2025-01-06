@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      9H
+    </title>
+  </head>
+
+  <body>
+    <input type="text" onkeyup="displayMessage(event)" class="js-input-class">
+    <p class="js-display"></p>
+
+    <script>
+      function displayMessage(event){
+        let message=document.querySelector('.js-input-class').value;
+        document.querySelector('.js-display').innerText=message;
+        
+      }
+    </script>
+  </body>
+</html>
