@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      11n
+    </title>
+  </head>
+
+  <body>
+    <script>
+      function countWords(array){
+        const result={};
+        for (let i=0;i<array.length;i++){
+         if(result.hasOwnProperty(array[i])){
+            result[array[i]]+=1;
+         }
+         else{
+          result[array[i]]=1
+         }   
+        }
+        return result;
+      }
+
+      console.log(countWords(["apple", "banana", "apple", "orange", "banana", "apple"]));
+    </script>
+  </body>
+</html>
