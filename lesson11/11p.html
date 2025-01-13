@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      11P
+    </title>
+  </head>
+
+  
+  <body>
+    <script>
+      function IndexofSearch(array){
+        let num=0;
+        for(let i=0;i<array.length;i++){
+          if(array[i]==='search'){
+            num++;
+            console.log(i);
+            break;
+          }
+        }
+        if(num===0){
+          console.log(-1);
+        }
+      }
+
+      IndexofSearch(['hello','world','search','good','search']);
+      IndexofSearch(['not','found']);
+
+    </script>
+  </body>
+</html>

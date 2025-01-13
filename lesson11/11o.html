@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      11o
+    </title>
+  </head>
+
+  
+  <body>
+    <script>
+      function IndexofSearch(array){
+        let num=0;
+        for(let i=0;i<array.length;i++){
+          if(array[i]==='search'){
+            num++;
+            console.log(i)
+          }
+        }
+        if(num===0){
+          console.log(-1);
+        }
+      }
+
+      IndexofSearch(['hello','world','search','good']);
+      IndexofSearch(['not','found']);
+
+    </script>
+  </body>
+</html>
