@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    App
+  </title>
+</head>
+
+<body>
+  <script>
+    setInterval(function changeTitle() {
+      let title = document.title;
+      if (title === 'App') {
+        document.title = '(2) New messages';
+      }
+      else{document.title = 'App'};
+      
+    }, 1000);
+  </script>
+</body>
+
+</html>

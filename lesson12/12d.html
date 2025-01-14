@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      12D
+    </title>
+  </head>
+
+  <body>
+    <button class="js-start-button" onclick="handleclickEvent();">
+      Start
+    </button>
+    <script>
+     
+      function handleclickEvent(){
+        const ButtonEle=document.querySelector('.js-start-button');
+        ButtonEle.innerHTML='Loading...'
+        setTimeout(function(){
+          ButtonEle.innerHTML='Finished!';
+        },1000);
+      }
+    </script>
+  </body>
+
+</html>

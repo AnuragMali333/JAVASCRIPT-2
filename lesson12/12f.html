@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      12F
+    </title>
+  </head>
+
+  <body>
+    <button onclick="handleClickEvent()">
+      Add to cart
+    </button>
+
+    <p class="js-display">
+
+    </p>
+    <script>
+      let timeoutId;
+
+      function handleClickEvent(){
+        const displayEle=document.querySelector('.js-display');
+
+        clearTimeout(timeoutId);
+
+        displayEle.innerHTML='Added';
+
+        timeoutId=setTimeout(function(){
+          displayEle.innerHTML=''
+        },2000);
+      }
+    </script>
+  </body>
+</html>
