@@ -15,9 +15,7 @@
       function handleclickEvent(){
         const ButtonEle=document.querySelector('.js-start-button');
         ButtonEle.innerHTML='Loading...'
-        setTimeout(function(){
-          ButtonEle.innerHTML='Finished!';
-        },1000);
+        setTimeout(()=>ButtonEle.innerHTML='Finished!',1000);
       }
     </script>
   </body>

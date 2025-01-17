@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      12E
-    </title>
-  </head>
 
-  <body>
-    <button onclick="handleClickEvent()">
-      Add to cart
-    </button>
-    <p class="js-display"></p>
-    <script>
-     
-      function handleClickEvent(){
-        const displayEle=document.querySelector('.js-display');
-        displayEle.innerHTML='Added';
-        setTimeout(function(){
-          displayEle.innerHTML='';
-        },2000)
-      }
+<head>
+  <title>
+    12E
+  </title>
+</head>
 
-    </script>
-  </body>
+<body>
+  <button class="js-add-to-cart-button">
+    Add to cart
+  </button>
+  <p class="js-display"></p>
+  <script>
+    const displayEle = document.querySelector('.js-display');
+    const buttonEle = document.querySelector('.js-add-to-cart-button');
+
+    buttonEle.addEventListener('click', () => {
+      displayEle.innerHTML = 'Added';
+      setTimeout(() => displayEle.innerHTML = '', 2000)
+    })
+  </script>
+</body>
+
 </html>

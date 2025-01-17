@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      12F
-    </title>
-  </head>
 
-  <body>
-    <button onclick="handleClickEvent()">
-      Add to cart
-    </button>
+<head>
+  <title>
+    12F
+  </title>
+</head>
 
-    <p class="js-display">
+<body>
+  <button class="js-add-to-cart-button">
+    Add to cart
+  </button>
 
-    </p>
-    <script>
-      let timeoutId;
+  <p class="js-display">
 
-      function handleClickEvent(){
-        const displayEle=document.querySelector('.js-display');
+  </p>
+  <script>
+    let timeoutId;
+    const displayEle = document.querySelector('.js-display');
+    const buttonEle = document.querySelector('.js-add-to-cart-button');
+    buttonEle.addEventListener('click', () => {
+      clearTimeout(timeoutId);
+      displayEle.innerHTML = 'Added';
+      timeoutId = setTimeout(() => displayEle.innerHTML = '', 2000);
+    })
+  </script>
+</body>
 
-        clearTimeout(timeoutId);
-
-        displayEle.innerHTML='Added';
-
-        timeoutId=setTimeout(function(){
-          displayEle.innerHTML=''
-        },2000);
-      }
-    </script>
-  </body>
 </html>
